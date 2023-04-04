@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgers</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        font-family: 'Segoe UI';
+        font-size: 22px;
+    }
+
+    img {
+        float: left;
+        width: 100%;
+    }
+   
+    .menu {
+        border: hidden;
+        float: left;
+        padding: 20px;
+        max-width: 300px;
+        height: 500px;
+        margin-top: 5px;
+        margin-bottom: 50px;
+        /* border-top: 6px solid #dad8d8; */
+        cursor: pointer;
+        background-color: white;
+
+        /* background: linear-gradient( #dad8d8 50, white 95%) ;
+        transition: 1.5 ease-out; */
+    }
+
+     .burgers:hover {
+        background: #dad8d8;
+        border: solid #dad8d8;
+    }
+
+    h3 {
+        color: rgba(190, 38, 38, 0.897);
+        
+    }
+
+    span {
+        font-style: italic;
+    }
+
+   /* relevant styles */
+.menu {
+  position: relative;
+  height: 500px;
+  width: 257px;
+}
+
+.img__description {
+  position: absolute ;
+  top: 4;
+  bottom: 0;
+  left: 0;
+  right: 0px;
+  border: solid #dad8d8;
+  background: #dad8d877;
+  color: #fff;
+  visibility: hidden;
+  opacity: 1;
+  color: black;
+  margin: 25px 45px 75px 50px;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.burgers:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+
+}
+</style>
+<body>
+    <div class="burgers">
+        <div class="menu">
+        <img src="images/burger1.png" alt="">
+        <h3>Double Burger</h3>
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+        <h3>$25.00</h3>
+        <button class="img__description">Order now</button>
+</div>
+<div class="menu">
+        <img src="images/burger2.png" alt="">
+        <h3>Chicken Burger</h3>
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+        <h3>$9.50</h3>
+        <button class="img__description">Order now</button>
+</div>
+<div class="menu">
+        <img src="images/burger3.png" alt="">
+        <h3>Mexican Burger</h3>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        <h3>$12.50</h3>
+        <button class="img__description">Order now</button>
+</div>
+<div class="menu">
+        <img src="images/burger4.png" alt="">
+        <h3>Mini burger</h3>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        <h3>$10.90</h3>  
+
+        <button class="img__description">Order now</button>
+    </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgers</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        font-family: 'Segoe UI';
+        font-size: 22px;
+    }
+
+    .burgers {
+        margin: 5px;
+        padding: 5px;
+    }
+   
+    .menu {
+        float: left;
+        width: 300px;
+        height: 480px;
+        transition: all 0.4s;
+        text-align: center;
+
+        background: linear-gradient(to bottom, #edecec 50%, #fff 50%) bottom;
+        background-size: 100% 200%;
+    }
+
+     .menu:hover {
+        border: 1px solid #707070;
+        box-shadow: 0px 0px 4px 3px #c5c1c1;
+        background-position: top;
+    }
+
+    .menu .image img {
+        width: 100%;
+    }
+
+    .menu .img-title {
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #c9332e;
+    }
+
+    .menu .price {
+        color: #c9332e;
+        font-weight: bolder;
+    }
+
+    .menu .description {
+        font-size: 0.8em;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+    /* Button Styling*/
+    .menu .button {
+        transform: scale(0);
+        margin-top: 20px;
+        background-color: #e4504a;
+        color: #fff;
+        padding: 6px 25px;
+        border-radius: 5px;
+        transition: all 0.2s;
+        box-shadow: 0px 0px 2px 2px #c2bfbf;
+        cursor: pointer;
+        display: inline-block;
+        transform-origin: top center;
+    }
+
+    .menu:hover .button {
+        transform: scale(1);
+    }
+
+    .menu .button:active {
+        transform: scale(1);
+    }
+
+    .menu .button:hover {
+        background: linear-gradient(to right, #e4504a, #b35450);
+    }
+
+    .footer-text {
+        color: #dbd8d8;
+        position: absolute;
+        bottom: 5px;
+        text-align: center;
+        width: 100%;
+    }
+</style>
+<body>
+    <div class="burgers">
+        <!--1st Burger-->
+        <div class="menu">
+            <div class="image">
+                <img src="images/burger1.png" alt="">
+            </div>
+        <div class="img-title">Double Burger</div>
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+       <div class="price"> $25.00</div>
+        <div class="button">Order Now</div>
+</div>
+
+<!--2nd Burger-->
+<div class="menu">
+    <div class="image"><img src="images/burger2.png" alt=""></div>
+    <div class="img-title">Chicken Burger</div>
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+        <div class="price">$9.50</div>
+        <div class="button">Order Now</div>
+</div>
+
+<!--3rd Burger-->
+<div class="menu">
+    <div class="image"><img src="images/burger3.png" alt=""></div>
+    <div class="img-title">Mexican Burger</div>
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+        <div class="price">$12.50</div>
+        <div class="button">Order Now</div>
+</div>
+
+<!--4th Burger-->
+<div class="menu">
+    <div class="image"><img src="images/burger4.png" alt=""></div>
+    <div class="img-title">Mini Burger</div>
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+        <div class="price">$10.90</div>
+        <div class="button">Order Now</div>
+</div>
+</div>
+    
+<div class="footer-text">Images: www.templatemonster.com</div>
+</body>
+</html>
